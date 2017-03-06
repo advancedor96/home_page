@@ -4,7 +4,7 @@ import MenuItem from 'material-ui/MenuItem';
 import {observer} from 'mobx-react';
 import AppStore from '../stores/AppStore.js';
 
-class Menu extends React.Component {
+class Menu extends Component {
     handlePosts = ()=>{
         AppStore.changeContent('HotPosts');
     }

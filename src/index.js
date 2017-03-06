@@ -5,7 +5,7 @@ import NoMatch from './components/NoMatch.js'
 import './components/index.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import { Router, Route, Link, hashHistory } from 'react-router'
+import { Router, Route, hashHistory } from 'react-router'
 injectTapEventPlugin();
 
 

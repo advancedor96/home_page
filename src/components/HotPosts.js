@@ -7,7 +7,7 @@ import image1 from '../1.jpg'; // Tell Webpack this JS file uses this image
 class HotPosts extends Component {
   render() {
     return (
-      <div style={getDisplay()}>
+      <div>
         <h1>用直銷模式幫助街友賣大誌</h1>
         <p>
 2015年2月，我加入了直銷，做了半年的nuskin，但是失敗了。哈哈。<br /><br />
@@ -29,7 +29,7 @@ class HotPosts extends Component {
 有一點有趣的事，通常出去陌生開發前，到了定點後，大家都會先自拍一張，
 然後 po 到直銷人的line群組。        
         </p>
-        <img src={image1} alt="image1" />
+        <img src={image1} role="presentation"/>
 <p>
 接著大家就會回「讚」「太棒了！」「太激勵了！」等等。這些回覆你的人，都是沒有
 利益關係的人。
@@ -44,11 +44,4 @@ class HotPosts extends Component {
   }
 }
 
-function getDisplay(){
-  if(AppStore.showContent === 'HotPosts'){
-    return {display: 'inline-block'};
-  }else{
-      return {display: 'none'};
-  }
-}
 export default observer(HotPosts);
