@@ -7,6 +7,8 @@ import AppStore from '../stores/AppStore.js';
 class Menu extends Component {
     handlePosts = ()=>{
         AppStore.changeContent('HotPosts');
+
+
     }
     handleHome = ()=>{
         AppStore.changeContent('home');

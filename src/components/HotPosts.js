@@ -5,6 +5,10 @@ import image1 from '../1.jpg'; // Tell Webpack this JS file uses this image
 
 
 class HotPosts extends Component {
+    componentDidMount(){
+
+    }
+
   render() {
     return (
       <div>
